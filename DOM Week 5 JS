@@ -1,0 +1,33 @@
+// what am i looking for
+// if it exists, what do i need to do with this element
+
+// collapsing the side bar of the website
+
+//create the event listener, listening for a click
+//addEventListener("eventType", function) listen for click action then run a function
+
+let isShown = true;
+
+document.getElementById("menuIcon").addEventListener("click", hideBar);
+
+function hideBar() {
+  let sideBarHideShow = document.getElementsByClassName("navStyle")[0];
+
+  let content = document.getElementsByClassName("container-content")[0];
+
+  if (isShown) {
+    sideBarHideShow.style.display = "none";
+    content.style.position = "absolute";
+    content.style.left = "50px";
+    content.style.width = "calc(100%-50px)";
+    isShown = false;
+  } else {
+    sideBarHideShow.style.display = "block";
+    content.style.position = "absolute";
+    content.style.left = "600px";
+    content.style.width = "calc(100%-200px)";
+    isShown = true;
+  }
+}
+
+// collapsing side bar END
