@@ -1,0 +1,224 @@
+* {
+    --orange: #EF8354;
+    --darkblue: #2D3142;
+    --darkgrey: #4F5D75;
+    --lightgrey: #BFC0C0;
+    font-size: 12px;
+}
+
+
+
+body {
+    background-color: rgb(104, 104, 104);
+    margin: 0px;
+
+    padding: 0px;
+
+
+}
+
+/* element styling */
+.ellipse {
+    position: relative;
+    margin: auto;
+    width: 600px;
+    height: 600px;
+    background: rgb(175, 175, 175);
+    border-radius: 50%;
+
+
+}
+
+.art {
+    position: fixed;
+    margin: auto;
+    width: 800px;
+    height: 800px;
+    background: rgb(255, 255, 255);
+    left: 65vw;
+    top: 7vw
+}
+
+.container-content {
+    position: absolute;
+    left: 15vw;
+    padding: 36px;
+    margin: 24px;
+    width: 65vw;
+    font-size: 3rem;
+    top: 5vw;
+    text-align: center;
+}
+
+.container-contentport {
+    position: absolute;
+    left: 5vw;
+    padding: 36px;
+    margin: 24px;
+    width: 30vw;
+    font-size: 3rem;
+
+    text-align: center;
+}
+
+/* element styling END */
+
+/* nav styling */
+nav {
+    background-color: #8618e0;
+    font-family: "Jolly Lodger", sans-serif;
+    position: fixed;
+    top: 1000px;
+    left: 0px;
+    width: 100vw;
+    height: 100vh;
+    font-size: 10rem;
+}
+
+
+
+
+nav>ul {
+    margin-left: 0px;
+    margin-top: 121px;
+    padding: 0px;
+    text-align: center;
+    font-size: 3rem;
+    font-style: normal;
+    font-weight: 100;
+    line-height: 150%;
+    /* 54px */
+    letter-spacing: 9px;
+    list-style-type: none;
+
+
+}
+
+#menu {
+    position: fixed;
+    top: 60px;
+    width: 100vw;
+    height: 140vh;
+    border-radius: 50%;
+    display: block;
+    z-index: 10;
+}
+
+nav {
+    z-index: 11;
+}
+
+#menu>span {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.navStyle>ul>li>a {
+    position: relative;
+    font-size: 4rem;
+    color: var(--darkblue);
+    text-decoration: none;
+    bottom: 50px;
+    line-height: 150%;
+    font-family: "Jolly Lodger", serif;
+
+}
+
+
+
+.navStyle>ul>li>a:hover {
+    color: rgb(255, 255, 255);
+}
+
+
+/* nav styling END */
+
+
+/* mobile styling uses mainly the same code from above but is tweaked slightly to fit any window that the site takes form to. Even adds a slider! */
+
+@media only screen and (max-width:1000px) {
+
+    * {
+        font-size: 10px;
+        overflow: visible;
+    }
+
+
+    body {
+        position: relative;
+        top: 0px;
+        left: 0px;
+        margin: 0px;
+        padding: 0px;
+        height: 100vh;
+
+    }
+
+    /* element styling */
+.ellipse {
+    position: relative;
+    margin: auto;
+    width: 600px;
+    height: 600px;
+    background: rgb(175, 175, 175);
+    border-radius: 50%;
+
+
+}
+
+   nav {
+    background-color: #8618e0;
+    font-family: "Jolly Lodger", sans-serif;
+    position: fixed;
+    top: 1000px;
+    left: 0px;
+    width: 100vw;
+    height: 100vh;
+    font-size: 10rem;
+}
+
+    nav>#menu {
+        display: none;
+        width: 1000px;
+    }
+
+    .container-content {
+        position: relative;
+        top: 12vh;
+        left: 0px;
+        padding: 36px;
+        margin: 0px;
+        width: 100%;
+        font-size: 2rem;
+    }
+
+    
+
+    .navStyle>ul>li>a {
+    position: relative;
+    font-size: 4rem;
+    color: var(--darkblue);
+    text-decoration: none;
+    bottom: 50px;
+    line-height: 150%;
+    font-family: "Jolly Lodger", serif;
+
+}
+
+.art {
+    position: fixed;
+    margin: auto;
+    width: 800px;
+    height: 800px;
+    background: rgb(255, 255, 255);
+    left: 65vw;
+    top: 7vw
+}
+
+
+
+}
+
+/* mobile styling END */
